@@ -1,0 +1,47 @@
+.Container-Box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    height: 700px;
+    background-color: beige;
+flex-direction: row; /*row los muestra en linea
+                               row-reverse
+                               column 
+                               column-reverse*/
+    justify-content: space-around;
+    /*
+    space-between=separa los elementos al mismo tamaño
+    space-around= separan los elementos muy poco
+    
+    */
+align-items: center;
+/*
+start
+center
+end
+*/
+}
+
+.item-1{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(139, 39, 0);
+}
+
+.item-2{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(0, 139, 51);
+}
+
+.item-3{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(81, 0, 139);
+}
+
+.item-4{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(139, 137, 0);
+}

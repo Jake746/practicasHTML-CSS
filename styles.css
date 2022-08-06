@@ -1,0 +1,43 @@
+.Container-Padre{
+    width: 800px;
+    height: 650px;
+    background-color: palevioletred;
+    margin: 10px; /*Margen global a los 4 lados*/
+   /* margin: 10px 10px    10px        10px; 
+            top  rigth (bottom)down left
+    margin-top: ;
+    margin-right: ;
+    margin-bottom: ;
+    margin-left: ;      
+            */
+    padding: 10px;
+    /*padding: 10px 10px 10px 10px;
+    padding-top: ;
+    padding-right: ;
+    padding-bottom: ;
+    padding-left: ;*/
+}
+
+.Container-uno{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(112, 216, 180);
+    margin: 30px; 
+    padding: 10px;
+}
+
+.Container-dos{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(216, 176, 112);
+    margin-left: 500px; 
+    padding: 10px;
+}
+
+.Container-tres{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(112, 206, 216);
+    margin: 30px; 
+    padding: 10px;
+}
