@@ -1,0 +1,235 @@
+body{
+    margin: 0px;
+}
+
+
+.ContainerHeader{
+    display: flex;
+    width: 100%;
+    height: 100px;  
+    background: cornsilk;
+    /*background: grey;*/
+    justify-content: space-between;
+    /*padding: 10px 20px 0px 20px;*/
+    padding: 10px;
+
+}
+
+.ContainerNav{
+ height: 100px;
+ width: 600px;
+ /*background: floralwhite;*/
+
+}
+
+.ContainerNav >ul{
+display: flex;
+justify-content: space-around;
+list-style: none;
+}
+
+/*Navegación hasta un elemento desde el padre*/
+.ContainerNav >ul>li>a{
+    color: rgb(0, 6, 10);
+    text-decoration: none;
+
+}
+
+.ContainerSing{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: none;
+    height: 50px;
+}
+
+.ContainerSing >a{
+   color: rgb(142, 217, 51);
+   text-decoration: none;
+   
+    
+}
+
+.ContainerSing >button{
+    height: 50px;
+    color: white;
+    background-color: #67b54b;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 0;
+    border-radius: 5px;
+
+}
+
+
+.features{
+display: grid;
+padding: 5% 10%;
+grid-template-columns: repeat(2,1fr);
+/*500px 1fr;*/
+/*300px 300px 300px 300px*/ /*agrga las columnas por tamaño*/
+/*repeat(2,300px);*/ /*repeat indica cuantas columnas quiero y de que tamaño*/
+background-color: #025157;
+/*width: 90%;
+height: 600px;*/
+grid-template-rows: repeat(2,1ft) ; /*agregas filas*/
+
+}
+
+
+/*Propiedades de Hijos de los articles*/
+.features >article{
+display: flex;
+margin-bottom: 30px ;
+margin-left: 15px;
+margin-right: 15px;
+/*width: 550px;
+height: 250px;  porque ya toma los margenes de los hijos*/
+background: white;
+border: 5px solid #090909; /*Crear margenes a mis tarjetas*/
+border-radius: 10px;
+align-items: center;
+}
+
+.ContainerArt1{
+display: flex;
+flex-direction: column;
+
+}
+
+.features >article>.FeatureContent{  /*Afecta unicamente a todos los articulos de GRID*/
+padding: 30px 20px 40px 40px;
+}
+
+.features >article>.FeatureContent>h3{  /*Afecta unicamente a todos los H3 de GRID*/
+  font-size: 24px;
+  color: #343434;
+  font-weight: 400; /*Dar grosor a los textos*/
+}
+
+
+.features >article>.FeatureContent>p{  /*Afecta unicamente a todos los Parrafos de GRID*/
+    font-size: 15px;
+    color: #7e7e7e;
+    font-weight: 400; /*Dar grosor a los textos*/
+  }
+
+.features >article>.FeatureContent>a{  /*Afecta unicamente a todos los Anchor*/
+    font-size: 16px;
+    color: #67b54b;
+    font-weight: 600; /*Dar grosor a los textos*/
+    text-decoration: none;
+  }
+
+
+  .features >article>.FeatureIMG{  /*Afecta unicamente a las imagenes*/
+    /*background-color: crimson;*/
+    width: 40%;
+    position: relative; /*Darla posicion a los elementos */
+    height: 15%;
+    right: 0;
+    top: -100px;
+    /*bottom: -400px;*//* Posicionar un elemento en la tarjeta*/
+  }
+
+
+
+
+/*Estilos para el video*/
+.Promo{
+    display: flex;
+    max-width: 70%;
+    margin: 80px 350px;
+    align-items: center;
+    height: 400px;
+    background-color: rgb(235, 235, 217);
+   
+}
+
+.Promo > .ContanierVideo {
+    display: flex;
+    justify-content: center;
+  }
+
+
+.Promo >.ContainerPublish{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.Promo > .ContainerPublish>h3{
+    font-family: "Alegreya" serif;
+    font-size: 30px;
+    line-height: 28px; /*Separación de letras en parrafo*/
+    color: #025157;
+    height: 25px;
+}
+
+.ContainerPublish>p{
+    font-size: 15px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    height: 120px;
+}
+
+
+/*para adaptar la pantalla*/
+/*@media (break point) {}*/
+
+/*Dispositivos ipads grandes en vista viewport (vertical)*/
+@media (max-width: 1000px){
+    body{
+        background-color: rgb(43, 174, 226);
+    }
+
+}
+
+/*Dispositivos ipads medianos en vista viewport (vertical)*/
+@media (max-width: 875px){
+    body{
+        background-color: rgb(208, 226, 43);
+    }
+
+}
+
+/*Dispositivos ipads minis en vista viewport (vertical)*/
+@media (max-width: 575px){
+    body{
+        background-color: blueviolet;
+    }
+    .ContainerNav{
+        display: none;
+           }
+
+}
+
+
+/*Dispositivos medianos celulares en vista  (vertical) para celulares*/
+@media (max-width: 475px){
+    body{
+        background-color: rgb(226, 43, 101);
+    }
+
+}
+
+
+@media (max-width: 375px){
+    body{
+        background-color: rgb(226, 43, 101);
+    }
+
+}
+
+
+@media (max-width: 325px){
+    body{
+        background-color: rgb(226, 43, 101);
+    }
+
+}
+
+
